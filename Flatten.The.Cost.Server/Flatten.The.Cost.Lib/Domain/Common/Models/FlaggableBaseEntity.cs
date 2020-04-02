@@ -8,6 +8,10 @@ namespace Flatten.The.Cost.Lib.Domain.Common.Models
         public bool IsFlagged { get; set; }
         public ICollection<Flag> Flags { get; set; }
 
+        public FlaggableBaseEntity()
+        {
+        }
+
         public void Flag(string reason, UserProfile flaggedBy)
         {
             if (!IsFlagged)

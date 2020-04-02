@@ -13,7 +13,11 @@ namespace Flatten.The.Cost.Lib.Domain.Forum.Models
         public string Body { get; set; }
         public UserProfile Author { get; set; }
         public ICollection<Tag> TagList { get; set; }
-        
+
+        public Article()
+        {
+        }
+
         public Article(string title, string description, string body, UserProfile author)
         {
             Title = title;

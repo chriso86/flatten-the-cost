@@ -16,6 +16,10 @@ namespace Flatten.The.Cost.Lib.Domain.Common.Models
         public new DateTimeOffset? RemovedAt { get; set; }
         public new UserProfile RemovedBy { get; set; }
 
+        public Flag()
+        {
+        }
+
         public Flag(string reason, UserProfile flaggedBy)
         {
             Reason = reason;

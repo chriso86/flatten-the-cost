@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Flatten.The.Cost.Lib.Domain.User.Models
 {
-    public class UserProfile : AuditableBaseEntity
+    public class UserProfile : FlaggableBaseEntity
     {
         public string Firstname { get; set; }
         public string Lastname { get; set; }
@@ -17,6 +17,10 @@ namespace Flatten.The.Cost.Lib.Domain.User.Models
         public string CvUrl { get; set; }
         public ICollection<UserProfile> Followers { get; set; }
         public ICollection<Article> FavouriteArticles { get; set; }
+
+        public UserProfile()
+        {
+        }
 
         public UserProfile(
             string firstname, 

@@ -9,6 +9,10 @@ namespace Flatten.The.Cost.Lib.Domain.Forum.Models
         public string Body { get; set; }
         public UserProfile Author { get; set; }
 
+        public Comment()
+        {
+        }
+
         public Comment(string body, UserProfile author)
         {
             Body = body;
