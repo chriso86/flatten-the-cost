@@ -11,7 +11,6 @@ namespace Flatten.The.Cost.Lib.Infrastructure.Services
         public static void RegisterServicesForDependencyInjection(IServiceCollection services)
         {
             // Register repositories with injector
-            services.AddScoped<FtcDbContext>();
             services.AddScoped<ArticleRepository>();
             services.AddScoped<CommentRepository>();
             services.AddScoped<FlagRepository>();
